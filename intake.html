@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Local Automaton Intake</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="details intake-shell">
+        <div>
+          <p class="eyebrow">Buyer intake</p>
+          <h1 class="intake-title">Start a small AI automation request</h1>
+          <p class="lede">
+            Prepare a clean setup request for Local Automaton. This form runs locally in your
+            browser, stores nothing on a server, and never asks for private keys.
+          </p>
+          <form id="intake-form" class="intake-form">
+            <label>
+              Package
+              <select id="package" name="package">
+                <option>Workflow Audit - $19 / 19 USDC</option>
+                <option>Blueprint Pack - $49 / 49 USDC</option>
+                <option>Setup Sprint - $99 / 99 USDC</option>
+              </select>
+            </label>
+            <label>
+              Buyer name
+              <input id="buyer" name="buyer" value="Indie AI builder" required />
+            </label>
+            <label>
+              Buyer contact
+              <input id="contact" name="contact" placeholder="email, handle, or note" />
+            </label>
+            <label>
+              Public receiving address
+              <input
+                id="address"
+                name="address"
+                value="0x78dfba7e723c8d109a8c2c40943f8adf51f3d79c"
+                required
+              />
+            </label>
+            <label>
+              Setup goal
+              <textarea id="goal" name="goal" rows="4">Install Local Automaton, connect Ollama, run demo package, and customize first workflow.</textarea>
+            </label>
+            <label>
+              First workflow type
+              <select id="workflow" name="workflow">
+                <option>AI content draft and approval queue</option>
+                <option>Local Ollama document workflow</option>
+                <option>Lead follow-up and task tracker</option>
+                <option>Daily briefing from approved inputs</option>
+                <option>Custom business automation</option>
+              </select>
+            </label>
+            <label>
+              Review gate
+              <select id="review" name="review">
+                <option>Require human approval before any publish/send action</option>
+                <option>Generate drafts only; no publishing</option>
+                <option>Local-only workflow with no external actions</option>
+              </select>
+            </label>
+            <label>
+              Timeline
+              <select id="timeline" name="timeline">
+                <option>Start today after payment verification</option>
+                <option>Start within 24 hours</option>
+                <option>Plan first, then schedule setup</option>
+              </select>
+            </label>
+            <label>
+              Base USDC transaction hash
+              <input id="tx" name="tx" placeholder="optional, after payment" />
+            </label>
+            <button class="primary" type="submit">Generate Request</button>
+          </form>
+        </div>
+        <aside class="intake-output">
+          <h2>Generated Request</h2>
+          <p id="validation">Fill the form and generate a request.</p>
+          <pre id="output"></pre>
+          <button class="secondary full" id="copy" type="button">Copy Text</button>
+          <p class="microcopy">
+            Delivery starts after payment is verified. The form never asks for passwords,
+            seed phrases, private keys, or account access.
+          </p>
+        </aside>
+      </section>
+    </main>
+    <script src="intake.js"></script>
+  </body>
+</html>

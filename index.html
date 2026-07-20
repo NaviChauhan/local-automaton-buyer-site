@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Local Automaton Setup</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Ollama-powered local AI setup</p>
+          <h1>Local Automaton</h1>
+          <p class="lede">
+            Small paid AI automation starts for builders who want private local workflows,
+            Ollama support, durable task memory, and review-gated tools without cloud model
+            credentials.
+          </p>
+          <div class="actions">
+            <a class="primary" href="#payment">View Payment Details</a>
+            <a class="secondary" href="#pricing">View Pricing</a>
+            <a class="secondary" href="intake.html">Start Intake</a>
+          </div>
+        </div>
+        <div class="product-panel" aria-label="Local Automaton product snapshot">
+          <div class="panel-top">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="terminal">
+            <p><strong>Model</strong> qwen2.5-coder:7b</p>
+            <p><strong>Agents</strong> Founder · Builder · Marketer · Seller · Finance</p>
+            <p><strong>Entry offer</strong> $19 / 19 USDC</p>
+            <p><strong>Setup offer</strong> $99 / 99 USDC</p>
+            <p><strong>Bundle</strong> 159 buyer-facing files</p>
+            <p><strong>Verified</strong> 87 local tests passing</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="grid">
+          <article>
+            <h2>What Gets Set Up</h2>
+            <p>
+              A local Automaton runtime connected to Ollama, with model selection, learning memory,
+              role-based agents, and payment-safe delivery gates.
+            </p>
+          </article>
+          <article>
+            <h2>What It Produces</h2>
+            <p>
+              A send bundle, customer toolkit, model guide, workflow library, dispatch queue,
+              onboarding runbook, and first-day setup checklist.
+            </p>
+          </article>
+          <article>
+            <h2>What Stays Safe</h2>
+            <p>
+              No seed phrases, private keys, cloud model credentials, or unreviewed transfers.
+              Wallets stay optional and review-gated.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="proof-strip" aria-label="Package proof">
+        <div>
+          <span>87</span>
+          <p>passing local tests</p>
+        </div>
+        <div>
+          <span>159</span>
+          <p>files in latest send bundle</p>
+        </div>
+        <div>
+          <span>3</span>
+          <p>active 100 USDC leads</p>
+        </div>
+        <div>
+          <span>0</span>
+          <p>private keys requested</p>
+        </div>
+      </section>
+
+      <section class="pricing band" id="pricing" aria-label="Pricing options">
+        <div>
+          <p class="eyebrow">Start small</p>
+          <h2>Pick the lowest-friction first step</h2>
+          <p class="pricing-note">
+            USDC is shown next to the dollar price because it normally tracks USD closely.
+            Direct buyers can pay on Base; marketplace buyers should pay inside the platform.
+          </p>
+        </div>
+        <div class="pricing-grid">
+          <article>
+            <p class="tier-price">$19 <span>/ 19 USDC</span></p>
+            <h2>Workflow Audit</h2>
+            <p>One workflow reviewed, bottlenecks identified, and a practical automation plan returned.</p>
+          </article>
+          <article class="featured-tier">
+            <p class="tier-price">$49 <span>/ 49 USDC</span></p>
+            <h2>Blueprint Pack</h2>
+            <p>Prompt flow, data inputs, review gate, and implementation steps for one usable automation.</p>
+          </article>
+          <article>
+            <p class="tier-price">$99 <span>/ 99 USDC</span></p>
+            <h2>Setup Sprint</h2>
+            <p>Ollama/local AI setup help, one runnable workflow direction, notes, and verification steps.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="details">
+        <div>
+          <h2>Package Contents</h2>
+          <ol>
+            <li>Customer automation CLI for intake, onboarding plan, and follow-up outputs.</li>
+            <li>Workflow library for lead qualification, payment follow-up, and setup audit.</li>
+            <li>Model integration guide for existing Ollama models and resource tiers.</li>
+            <li>Seller dispatch queue, payment request note, and outreach refinements.</li>
+            <li>Payment-gated onboarding runbook and first 24 hours buyer checklist.</li>
+          </ol>
+        </div>
+        <aside id="payment">
+          <p class="price">$19+</p>
+          <p>Start with an audit, then upgrade only when the buyer wants deeper setup.</p>
+          <p class="gate">Delivery starts after Base USDC verification.</p>
+          <div class="payment-box" aria-label="Direct payment details">
+            <p class="payment-label">Base USDC address</p>
+            <code id="wallet-address">0x78dfba7e723c8d109a8c2c40943f8adf51f3d79c</code>
+            <label class="compact-label" for="payment-tier">Payment tier</label>
+            <select id="payment-tier">
+              <option value="19">Workflow Audit - $19 / 19 USDC</option>
+              <option value="49">Blueprint Pack - $49 / 49 USDC</option>
+              <option value="99">Setup Sprint - $99 / 99 USDC</option>
+            </select>
+            <button class="secondary full" id="copy-wallet" type="button">Copy Address</button>
+            <button class="secondary full" id="copy-payment-note" type="button">Copy Payment Note</button>
+            <p id="copy-status" class="microcopy">Public payment address only.</p>
+          </div>
+          <a class="primary full" href="intake.html">Start Buyer Intake</a>
+        </aside>
+      </section>
+
+      <section class="band">
+        <div class="split">
+          <div>
+            <p class="eyebrow">After payment</p>
+            <h2>What Happens Next</h2>
+            <ol>
+              <li>Payment is checked with read-only Base USDC verification.</li>
+              <li>The first workflow is scoped with approved inputs and success criteria.</li>
+              <li>A runnable setup example is prepared with notes and verification steps.</li>
+              <li>The buyer receives a handoff checklist and next improvement plan.</li>
+            </ol>
+          </div>
+          <div class="faq-list">
+            <article>
+              <h2>Do you need my passwords?</h2>
+              <p>No. Setup is designed around public inputs, local files, or buyer-approved sample data.</p>
+            </article>
+            <article>
+              <h2>Can it run locally?</h2>
+              <p>Yes. The default path uses Ollama and Python so the core workflow can run on the buyer's machine.</p>
+            </article>
+            <article>
+              <h2>Can it publish automatically?</h2>
+              <p>Only if the buyer explicitly chooses that later. The first milestone keeps review and approval in front of any action.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="payment.js"></script>
+  </body>
+</html>

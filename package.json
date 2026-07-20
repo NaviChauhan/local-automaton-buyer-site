@@ -1,0 +1,9 @@
+{
+  "name": "local-automaton-buyer-site",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "deploy": "vercel --yes --prod"
+  }
+}
