@@ -153,10 +153,12 @@
         <aside id="payment">
           <p class="price">$19+</p>
           <p>Start with an audit, then upgrade only when the buyer wants deeper setup.</p>
-          <p class="gate">Delivery starts after Base USDC verification.</p>
+          <p class="gate">Delivery starts after Base USDC verification, platform milestone, or owner-confirmed PayPal receipt.</p>
           <div class="payment-box" aria-label="Direct payment details">
             <p class="payment-label">Base USDC address</p>
             <code id="wallet-address">0x78dfba7e723c8d109a8c2c40943f8adf51f3d79c</code>
+            <p class="payment-label">PayPal/card link</p>
+            <a id="paypal-link" href="https://paypal.me/darsider24">paypal.me/darsider24</a>
             <label class="compact-label" for="payment-tier">Payment tier</label>
             <select id="payment-tier">
               <option value="19">Workflow Audit - $19 / 19 USDC</option>
@@ -164,8 +166,9 @@
               <option value="99">Setup Sprint - $99 / 99 USDC</option>
             </select>
             <button class="secondary full" id="copy-wallet" type="button">Copy Address</button>
+            <button class="secondary full" id="copy-paypal" type="button">Copy PayPal Link</button>
             <button class="secondary full" id="copy-payment-note" type="button">Copy Payment Note</button>
-            <p id="copy-status" class="microcopy">Public payment address only.</p>
+            <p id="copy-status" class="microcopy">Public payment links only.</p>
           </div>
           <a class="primary full" href="intake.html">Start Buyer Intake</a>
         </aside>
@@ -177,7 +180,7 @@
             <p class="eyebrow">After payment</p>
             <h2>What Happens Next</h2>
             <ol>
-              <li>Payment is checked with read-only Base USDC verification.</li>
+              <li>Payment is checked with read-only Base USDC verification, platform milestone proof, or owner-confirmed PayPal receipt.</li>
               <li>The first workflow is scoped with approved inputs and success criteria.</li>
               <li>A runnable setup example is prepared with notes and verification steps.</li>
               <li>The buyer receives a handoff checklist and next improvement plan.</li>
