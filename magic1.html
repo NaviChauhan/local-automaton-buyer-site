@@ -52,6 +52,29 @@
 
       <section class="details">
         <div>
+          <p class="eyebrow">Example diagnostic slice</p>
+          <h2>AI content workflow reliability map</h2>
+          <p>
+            For a content, research, or script-generation workflow, the first pass maps the
+            trigger, approved source fields, LLM boundary, review queue, and publishing handoff
+            before any automation writes downstream.
+          </p>
+          <ol>
+            <li><strong>Input contract:</strong> topic, audience, source URL, owner notes, and blocked fields that must never go to an LLM.</li>
+            <li><strong>Output schema:</strong> title, draft, source notes, confidence, review status, and retry/error reason.</li>
+            <li><strong>Failure paths:</strong> invalid JSON, empty source, API timeout, duplicate request, and owner-visible alert.</li>
+            <li><strong>Test handoff:</strong> sample payloads, expected outputs, negative cases, and maintenance notes for future prompt edits.</li>
+          </ol>
+        </div>
+        <aside>
+          <p class="price">QA</p>
+          <p>Each workflow slice gets explicit checks before implementation expands.</p>
+          <p class="gate">No auto-publish, auto-send, or irreversible write happens before human review is confirmed.</p>
+        </aside>
+      </section>
+
+      <section class="details">
+        <div>
           <h2>First Diagnostic Offer</h2>
           <ol>
             <li>Review one workflow goal for content, research, script generation, or workflow maintenance.</li>
